@@ -1,5 +1,6 @@
 import digitalocean
 import argparse
+import os
 
 def digital():
     droplet = digitalocean.Droplet(token="dop_v1_ba1850a51a5f9cc02a917f950e1376120dd957151d6541bb468f4979c5968ff5",
@@ -24,4 +25,5 @@ digital()
 ## 0. https://pypi.org/project/python-digitalocean/                   pip3 install -U python-digitalocean
 ## 1. https://docs.digitalocean.com/reference/doctl/how-to/install/   brew install doctl
 ## 2. https://docs.digitalocean.com/tutorials/build-deploy-first-image/
+## 3. https://docs.docker.com/language/python/build-images/
 
