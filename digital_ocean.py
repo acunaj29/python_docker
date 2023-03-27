@@ -2,17 +2,15 @@ import digitalocean
 import argparse
 import os
 
-def digital():
-    droplet = digitalocean.Droplet(token="dop_v1_ba1850a51a5f9cc02a917f950e1376120dd957151d6541bb468f4979c5968ff5",
-    name='Acunadroplet',
-    region='nyc1',
-    image='ubuntu-22-10-x64',
-    size_slug='s-1vcpu-1gb',
-    backups=True)
 
-    droplet.create()
+droplet = digitalocean.Droplet(token="dop_v1_ba1850a51a5f9cc02a917f950e1376120dd957151d6541bb468f4979c5968ff5",
+name='Acunadroplet',
+region='nyc1',
+image='ubuntu-22-10-x64',
+size_slug='s-1vcpu-1gb',
+backups=True)
 
-#if __name__ == '__main--':
+droplet.create()
 digital()
 
 

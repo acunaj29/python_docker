@@ -3,4 +3,4 @@ WORKDIR /app
 ADD . /app
 RUN pip install -r requirements.txt
 ENV NAME World
-CMD ["python", "app.py"]
+CMD ["python","digital_ocean.py"]
