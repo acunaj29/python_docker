@@ -16,6 +16,12 @@ droplet.create()
 
 
 ##manager = digitalocean.Manager(token="dop_v1_ba1850a51a5f9cc02a917f950e1376120dd957151d6541bb468f4979c5968ff5")
+##my_droplets = manager.get_all_droplets()
+##for droplet in my_droplets:
+##    droplet.shutdown()
+
+
+##manager = digitalocean.Manager(token="dop_v1_ba1850a51a5f9cc02a917f950e1376120dd957151d6541bb468f4979c5968ff5")
 ##print(manager.get_all_droplets())
 
 
