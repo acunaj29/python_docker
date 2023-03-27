@@ -11,7 +11,7 @@ size_slug='s-1vcpu-1gb',
 backups=True)
 
 droplet.create()
-digital()
+#digital()
 
 
 
