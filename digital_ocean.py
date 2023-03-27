@@ -1,20 +1,17 @@
 import digitalocean
 import argparse
-import os
 
+from decouple import config
 
-droplet = digitalocean.Droplet(token="dop_v1_ba1850a51a5f9cc02a917f950e1376120dd957151d6541bb468f4979c5968ff5",
-name='Acunadroplet',
-region='nyc1',
-image='ubuntu-22-10-x64',
-size_slug='s-1vcpu-1gb',
-backups=True)
+droplet = digitalocean.Droplet(token='token',
+name='name',
+region='region',
+image='image',
+size_slug='size_slug',
+backups='backups')
 
 droplet.create()
 #digital()
-
-
-
 ##manager = digitalocean.Manager(token="dop_v1_ba1850a51a5f9cc02a917f950e1376120dd957151d6541bb468f4979c5968ff5")
 ##my_droplets = manager.get_all_droplets()
 ##for droplet in my_droplets:
